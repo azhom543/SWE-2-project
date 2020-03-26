@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>{{config('appname', 'Creative Store')}}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      margin-top: 2%;
+    }
+    .box{
+      width:60%;
+      margin:0 auto;
+      border:3px solid #ccc;
+      height: 550px;
+      background-color: beige;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-  <h2>Sign up</h2>
+<div class="container box">
+  <h2>Register</h2>
   <form action="register_action" method="post">
     <input type="hidden" name="_token" value="{{csrf_token()}}">
     @if(count($errors) > 0)
-        @foreach($errors->all() as $error )
+        @foreach($errors->all() as $error)
 
         <div class="alert alert-danger">{{$error}}</div>
         @endforeach

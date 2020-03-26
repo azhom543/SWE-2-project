@@ -16,9 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/register', function () {
-    return view('register.register');
+    return view('register');
 });
-
+Route::get('/uploadfile', 'UploadfileController@index');
+Route::post('/uploadfile', 'UploadfileController@upload');
+Route::get('/main', 'RegisterController@index');
+Route::post('/main/checklogin', 'RegisterController@checklogin');
+Route::get('main/successlogin', 'RegisterController@successlogin');
+Route::get('main/logout', 'RegisterController@logout');
 Route::post('/register_action','RegisterController@store');
+Route::get('/homepage', 'RegisterController@homeindex');
