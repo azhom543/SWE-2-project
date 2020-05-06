@@ -28,7 +28,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <img src={{ asset('images/cart.png') }} alt="" width="40" height="40">
-      <a class="navbar-brand" href="/homepage" style="margin-left: 10px">{{config('appname', 'Creative Store')}}</a>
+      <a class="navbar-brand" href="http://localhost/OnlineShopping/public/homepage" style="margin-left: 10px">{{config('appname', 'Creative Store')}}</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li>
-            <a class="nav-link" href="/homepage">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="http://localhost/OnlineShopping/public/homepage">Home <span class="sr-only">(current)</span></a>
           </li>
           <ul class="navbar-nav mr-auto log">
               <li class="nav-item">
