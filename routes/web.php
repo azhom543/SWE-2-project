@@ -27,3 +27,4 @@ Route::get('main/successlogin', 'RegisterController@successlogin');
 Route::get('main/logout', 'RegisterController@logout');
 Route::post('/register_action','RegisterController@store');
 Route::get('/homepage', 'RegisterController@homeindex');
+Route::resource('/cart','CartController');
