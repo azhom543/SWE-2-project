@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 Auth::routes();
 
-Route::get('/home2', 'FrontController@index')->name('Front');
+Route::get('/', 'FrontController@index')->name('Front');
 Route::get('/shirts', 'FrontController@shirts')->name('shirts');
 Route::get('/shirt', 'FrontController@shirt')->name('shirt');
 

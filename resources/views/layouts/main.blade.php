@@ -9,13 +9,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>
-        @yield('title','Mickey Shirts')
+        @yield('title','Creative Store')
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css
 ">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="{{asset('dist/css/foundation.css')}}"/>
     <link rel="stylesheet" href="{{asset('dist/css/app.css')}}"/>
+    <link rel="stylesheet" href="{{asset('dist/css/fontawesome-all.min')}}"/>
     {{--<link rel="stylesheet" href="{{asset('css/app.css')}}"/>--}}
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
 
@@ -30,7 +31,7 @@
                 <a href="{{route('home')}}">
                     <i class="fa fa-home fa-lg" aria-hidden="true">
                     </i>
-                    MC-MyKey Shirts
+                    Creative Store Shirts
                 </a>
             </h4>
         </div>
@@ -38,16 +39,28 @@
             <ol class="menu">
                 <li>
                     <a href="{{route('shirts')}}">
-                        SHIRTS
+                        shirts
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        CONTACT
+                        Contact
                     </a>
                 </li>
                 <li>
-                    <cart-count  :cartcount="totalItems" > </cart-count>
+                    <a href="{{ route('login') }}">Login</a>
+                </li>
+                <li>
+                    <a href="{{ route('admin.login') }}">Admin</a>
+                </li>
+                <li>
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}">Register</a>
+                    @endif
+                </li>
+                <li>
+                    <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
+                    </i>
                 </li>
             </ol>
         </div>
@@ -74,6 +87,12 @@
         <div class="small-12 medium-4 large-4 columns">
             <i class="fi-laptop"></i>
             <p>Coded with love by Webdevmatics for educational purpose only</p>
+
+                    <i class="fab fa-facebook-f pages"></i>
+                    <i class="fab fa-twitter pages"></i>
+                    <i class="fab fa-linkedin pages"></i>
+                    <i class="fab fa-pinterest pages"></i>
+                    <i class="fab fa-google-plus pages"></i>
         </div>
         <div class="small-12 medium-4 large-4 columns">
             <i class="fi-html5"></i>
@@ -100,6 +119,7 @@
 <script src="{{asset('dist/js/app.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('dist/js/vendor/foundation.js')}}"></script>
+<script src="{{asset('dist/js/fontawesome-all.min')}}"></script>
 <script>
     $(document).foundation();
 </script>

@@ -8,7 +8,7 @@
         <br/>
         <h2>
             <strong>
-                Hey! Welcome to MC- Mykey's Store
+                Hey! Welcome to Creative Store
             </strong>
         </h2>
         <br>
@@ -19,7 +19,7 @@
     <br/>
     <div class="subheader text-center">
         <h2>
-            MyKey&rsquo;s Latest Shirts
+            Creative Store&rsquo;s Latest Shirts
         </h2>
     </div>
 
