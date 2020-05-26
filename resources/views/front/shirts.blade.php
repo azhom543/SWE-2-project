@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>
-            Foundation for Sites
+             @yield('title','Creative Store')
         </title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="dist/css/foundation.css"/>
@@ -18,7 +18,7 @@
                     <a href="index.html">
                         <i class="fa fa-home fa-lg" aria-hidden="true">
                         </i>
-                       MC-MyKey Shirts
+                        Creative Store
                     </a>
                 </h4>
             </div>
