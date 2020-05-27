@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 /*Route::get('/', function () {
     return view('welcome');
 });*/
+Route::get('/users', 'AdminController@ShowUsers')->name('admin.users');
+  Route::delete('/users/{user}', 'AdminController@DestroyUser')->name('user.delete');
+  
 
 Auth::routes();
 
