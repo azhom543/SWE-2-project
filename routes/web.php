@@ -26,7 +26,7 @@ Route::get('/', 'FrontController@index')->name('Front');
 Route::get('/shirts', 'FrontController@shirts')->name('shirts');
 Route::get('/shirt', 'FrontController@shirt')->name('shirt');
 
-
+Route::resource('category','CategoriesController');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

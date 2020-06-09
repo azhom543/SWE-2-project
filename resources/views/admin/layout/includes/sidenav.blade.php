@@ -18,6 +18,15 @@
             </li>
             <li class="submenu">
                 <a href="#">
+                    <i class="glyphicon glyphicon-list"></i> Categories
+                    <span class="caret pull-right"></span>
+                </a>
+                <ul>
+                    <li><a href="{{route('category.index')}}">Show Categories</a></li>
+                </ul>
+            </li>
+            <li class="submenu">
+                <a href="#">
                     <i class="glyphicon glyphicon-list"></i> Users
                     <span class="caret pull-right"></span>
                 </a>
